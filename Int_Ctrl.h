@@ -9,5 +9,6 @@
 
 void IntCtrl_init(void);
 void Interrupt_Disable(int Interrupt);
+void super_Call(void);
 
 #endif
