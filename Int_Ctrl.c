@@ -68,9 +68,10 @@ void IntCtrl_init (void)
 		  Priority_mode = Interrupt_Priority_Levels;
 		  Priority_mode =(Priority_mode<<8);
 		  Intrrupt_Ctrl |= Priority_mode; // YYY
-		  
-		  Pri_Offset =(Loc_InterruptNum%32)*8 + 5;
+			
 		  Priority_regs_Offset = Loc_InterruptNum/4;
+				
+		  Pri_Offset =((Loc_InterruptNum*8)+5) - (32*Priority_regs_Offset) ;
 		  
 		  priority= Loc_GroupPri;
 		  priority = (priority<<Pri_Offset);

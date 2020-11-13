@@ -25,7 +25,7 @@ static IntCtrl IntCtrl_Config [Interrupts_Max_Number] =
 
 	{GPIO_Port_A    ,     1           ,   0               },
 	{GPIO_Port_B    ,     2           ,   1               },
-	{GPIO_Port_C    ,     3           ,   1               }
+	{Timer_0A          ,     3           ,   1               }
 	
 };
 
